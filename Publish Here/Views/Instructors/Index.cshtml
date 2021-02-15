@@ -1,0 +1,51 @@
+﻿@model IEnumerable<brendanLowe_MIS4200.Models.Instructor>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.numClasses)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.salary)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.studentID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.courseID)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.numClasses)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.salary)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.studentID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.courseID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.instructorID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.instructorID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.instructorID })
+        </td>
+    </tr>
+}
+
+</table>

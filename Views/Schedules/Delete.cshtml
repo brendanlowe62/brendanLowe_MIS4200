@@ -1,0 +1,40 @@
+﻿@model brendanLowe_MIS4200.Models.Schedule
+
+@{
+    ViewBag.Title = "Delete Schedule";
+}
+
+<h2>Delete Schedule</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Schedule</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.numClasses)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.numClasses)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tuitionCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tuitionCost)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Brendan's Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Brendan Lowe</h1>
+    <p class="lead">Welcome to my MIS 4200 Spring 2020-21 Classpage!</p>
+    <p><a href="https://ohio.edu" class="btn btn-primary btn-lg">OHIO University &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>My Links</h2>
+        <p>
+            <ul>
+                <li>@Html.ActionLink("Student", "Index", "Students")</li>
+                <li>@Html.ActionLink("Course", "Index", "Courses")</li>
+                <li>@Html.ActionLink("Schedule", "Index", "Schedules")</li>
+                <li>@Html.ActionLink("Instructor", "Index", "Instructors")</li>
+            </ul>
+        </p>
+        
+    </div>
+    <div class="col-md-4">
+        <h2>Organizations</h2>
+        <p>
+            Here at OU, I am involved in a couple of organizations. The first organization I am a member of is
+            Presidential Leadership Society, which works with Pres. Nellis to attend donor events and provide donors
+            with real engagement with the very people they are supporting financially. The other organization I am a member of is
+            Information Systems and Analytics Professionals, or ISAP for short. The goal of ISAP is for people in the MIS and Business Analytics
+            Majors to have an opportunity to hear from companies who are hiring and make valuable connections that could very well
+            result in an internship or job.
+        </p>
+        <p><a class="btn btn-default" href="https://www.ohio.edu/president/presidential-leadership-society">More about PLS &raquo;</a></p>
+        <p><a class="btn btn-default" href="https://ouisap.com/">More about ISAP &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Summer 2021 Internship</h2>
+        <p>This summer, I will be interning with Ernst & Young in Pittsburgh, PA in the Risk Advisory Program. Linked below is more 
+        information about the company.</p>
+        <p><a class="btn btn-default" href="https://www.ey.com/en_gl/who-we-are">Learn more &raquo;</a></p>
+    </div>
+</div>
